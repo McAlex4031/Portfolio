@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Alexandre</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="sidebar">
+    <button onclick="showPage('accueil')">🏠</button>
+    <button onclick="showPage('projets')">📁</button>
+</nav>
+
+<section id="accueil" class="page">
+    <div class="hero">
+        <h1>Alexandre</h1>
+        <p>Développeur web • créateur de projets • jeux</p>
+    </div>
+
+    <div class="about">
+        <h2>À propos</h2>
+        <p>J’aime créer des sites web et apprendre le développement.</p>
+
+        <a href="https://github.com/McAlex4031" target="_blank">Mon GitHub</a>
+    </div>
+</section>
+
+<section id="projets" class="page">
+
+    <h1>Mes projets</h1>
+
+    <div class="filters">
+        <button onclick="filterProjects('all')">Tous</button>
+        <button onclick="filterProjects('sites')">Sites</button>
+        <button onclick="filterProjects('jeux')">Jeux</button>
+        <button onclick="filterProjects('autres')">Autres</button>
+    </div>
+
+    <div class="projects">
+
+        <h2 class="section-title">🌐 Sites</h2>
+
+        <div class="project-card" data-category="sites">
+            <h3>Brawl Stars Max</h3>
+            <p class="desc">Google Sites</p>
+            <a href="https://sites.google.com/view/brawl-stars-max" target="_blank">Voir</a>
+        </div>
+
+        <div class="project-card" data-category="sites">
+            <h3>Poke Maniac</h3>
+            <p class="desc">Google Sites</p>
+            <a href="https://sites.google.com/view/poke-maniac" target="_blank">Voir</a>
+        </div>
+
+        <div class="project-card" data-category="sites">
+            <h3>Prank-site 💣</h3>
+            <p class="desc">Projet codé par moi</p>
+
+            <a href="https://mcalex4031.github.io/Prank-site/" target="_blank">Voir le site</a>
+
+            <a class="code-btn"
+               href="https://github.com/McAlex4031/Prank-site"
+               target="_blank">
+               🐙 Voir le code
+            </a>
+        </div>
+
+        <div class="empty-message" data-category="jeux">
+            <div class="detective">🐕‍🕵️‍♂️</div>
+            <p>Rien ici... enquête en cours.</p>
+        </div>
+
+        <div class="empty-message" data-category="autres">
+            <div class="detective">🐕‍🕵️‍♂️</div>
+            <p>Aucun projet trouvé ici.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<button id="topBtn" onclick="scrollToTop()">⬆</button>
+
+<script src="script.js"></script>
+</body>
+</html>
